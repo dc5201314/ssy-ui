@@ -1,0 +1,99 @@
+/*
+ * @Author: gbxc 
+ * @Last Modified by: gbxc
+ * @Date: 2022-12-27 14:09:21 
+ * @Last Modified time: 2022-12-27 14:21:21
+ */
+ /* 下方盒子 */
+ body{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(#bea2ff 0%, #fca4e3 100%);
+    background-size: cover;
+    flex: 1;
+    align-items: center;
+}
+/* 中间盒子 */
+.login{
+    text-align: center;
+    margin: 0 auto;
+    width: 900px;
+    height: 1300px;
+    background-color: rgba(103, 71, 71, 0.2);
+    border-radius: 25px;
+    box-shadow: 5px 2px 35px -7px #ff9a9e;
+}
+/* 登录注册 */
+.login h2{
+    margin-top: 40px;
+    color: rgb(163, 209, 249);
+    font-weight: 100;
+}
+/* 间隔 */
+.login_form{
+    padding: px;
+}
+/* 账号密码 */
+ p{
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 100;
+}
+/* 账号和密码输入盒子 */
+ input{
+    background-color: transparent;
+    width: 320px;
+    padding: 2px;
+    text-indent: 2px;
+    color: rgb(200, 198, 198);
+    font-size: 20px;
+    height: 45px;
+    margin: 30px 30px 30px 5px;
+    outline: none;
+    border: 0;
+    border-bottom: 1px solid rgb(237, 227, 227);
+}
+/* 请输入 */
+input::placeholder{
+    color: #c94242;
+    font-weight: 100;
+    font-size: 18px;
+    font-style: italic;
+}
+/* 登录按钮 */
+p1{
+    background-color: rgba(255, 255, 255, 0.582);
+    border: 1px solid rgb(190, 225, 255);
+    padding: 10px;
+    width: 240px;
+    height: 60px;
+    border-radius: 30px;
+    font-size: 30px;
+    color: rgb(100, 183, 255);
+    font-weight: 100;       
+    margin-top: 15px;
+}
+.login_btn:hover{
+    box-shadow: 2px 2px 15px 2px rgb(190, 225, 255);
+    background-color: transparent;
+    color: white;
+    /* 选择动画 */
+    animation: login_mation 0.5s;
+}
+
+/* 定义动画 */
+@keyframes login_mation
+{
+    from {
+        background-color: rgba(255, 255, 255, 0.582);
+        box-shadow: 0px 0px 15px 2px rgb(190, 225, 255);
+    }
+    to {
+        background-color: transparent;
+        color: white;
+        box-shadow: 2px 2px 15px 2px rgb(190, 225, 255);
+    }
+}
